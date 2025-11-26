@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>William Gil | Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital@1&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital@1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header class="site-header">
+    <div class="logo">William Gil</div>
+
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="header-cta">
+      <a href="#projects" class="btn-primary" role="button" aria-label="View my projects">View My Projects</a>
+    </div>
+</header>
+<main>
+    <section id="home" class="hero">
+<div class="hero-content fade-in">        <!-- left column -->
+    <h1>Hi, I'm William Gil</h1>
+    <h2>Full-Stack Software Developer and Creative Problem Solver</h2>
+    <p class="subline">I build beautiful responsive web experiences using HTML, CSS, JavaScript, MongoDB, Express, React and Node.js</p>
+    <!-- CTA: either a button (JS-driven) or anchor (in-page scroll) -->
+    <a href="#projects" class="btn-primary" role="button">View My Projects</a>
+  </div>
+
+  <div class="hero-carousel" aria-roledescription="carousel" aria-label="Featured projects">
+    <button class="carousel-prev" aria-label="Previous slide">‹</button>
+
+    <ul class="carousel-list">
+      <li class="carousel-item" aria-roledescription="slide" aria-label="TaskPro: 1 of 3">
+        <figure>
+          <img src="images/taskpro-placeholder.jpg" alt="Eisenhower matrix style task dashboard preview">
+          <figcaption>TaskPro — priority-driven task manager</figcaption>
+        </figure>
+      </li>
+
+      <!-- next slides for WeatherNow, MiniChirp... -->
+    </ul>
+
+    <button class="carousel-next" aria-label="Next slide">›</button>
+  </div>
+    </section>
+    <section id="about" class="section">
+        <h2>About</h2>
+        <div class="about-grid">
+          <div class="about-bio">
+        <h3>Bio</h3>
+        <p>Hi, I'm William Gil, a full-stack software developer who loves building cool web apps for busy professionals.</p>
+        </div>
+        <aside-class="about-side">
+        <h3>Skills</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+        </ul>
+        <h3>Hobbies</h3>
+        <ul>
+            <li>Anime (Yu Yu Hakusho)</li>
+            <li>Soccer (FC Barcelona | Lionel Messi)</li>
+            <li>Traveling (Pictures of NYC)</li>
+        </ul>
+      </aside>
+    </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="projects-grid">
+      <article class="project-card">
+        <figure>
+          <img src="images/<project>-placeholder.jpg" alt="Short alternative text describing the image">
+        <figcaption><strong>Project Title</strong> short-tagline</figcaption>
+          </figure>
+
+          <div class="project-body">
+            <p class="project-desc">One-line description (problem → solution → tech).</p>
+          <div class="project-meta">
+            <span class="project-tech">Tech: HTML, CSS, JavaScript, Node.js</span>
+            <div class="project-links">
+              <a href="#" class="btn-demo" aria-label="View live demo of Project Title">Live Demo</a>
+              <a href="https://github.com/yourusername/repo-name" class="btn-github" aria-label="View Project Title on Github">Github</a>
+            </div>
+          </div>
+          </div>
+      </article>
+      <article class="project-card">
+        <figure>
+          <img src="images/taskpro-placeholder.jpg" alt="Eisenhower matrix style task dashboard preview">
+        <figcaption><strong>TaskPro</strong> - priority-driven task manager</figcaption>
+        </figure>
+        <div class="project-body">
+          <p class="project-desc">Problem: managing priorities. Solution: TaskPro uses an Eisenhower matrix to categorize tasks and set due dates. Tech: HTML, CSS, JavaScript, Node.js, Express, MongoDB</p>
+        <div class="project-meta">
+          <span class="project-tech">Tech: HTML, CSS, JavaScript, Node.js, Express, MongoDB</span>
+          <div class="project-links">
+            <a href="#" class="btn-demo" aria-label="View live demo of TaskPro">Live Demo</a>
+          <a href="https://github.com/yourusername/taskpro" class="btn-github" aria-label="View TaskPro on Github">Github</a>
+        </div>
+        </div>
+        </div>
+      </article>
+<article class="project-card card-hover">
+  <figure>
+    <img src="images/weathernow-placeholder.jpg" alt="Bright weather UI showing sun and clouds and temperature">
+  <figcaption><strong>WeatherNow</strong> - weekly forecasts, search locations</figcaption></figure>
+<div class="project-body">
+  <p class="project-desc">Problem: checking the weather quickly. Solution: WeatherNow provides a clean UI for weekly forecasts and location search.</p>
+<div class="project-meta">
+  <span class="project-tech">Tech: HTML, CSS, JavaScript, Node.js, Express</span>
+<div class="project-links">
+  <a href="#" class="btn-demo" aria-label="View live demo of WeatherNow">Live Demo</a>
+  <a href="https://github.com/yourusername/weathernow" class="btn-github" aria-label="View WeatherNow on Github">Github</a>
+    </div>
+  </div>
+</div>
+
+
+
+</article> <!-- WeatherNow closes here -->
+
+<article class="hidden"></article>
+<article class="hidden"></article>
+<div class="projects-more">
+  <button id="show-more-projects">See more</button>
+</div>
+</div>
+    </section>
+
+    <section id="blog" class="section">
+      <h2>Latest Posts</h2>
+      <div class="blog-grid">
+        <a class="blog-card card-hover" href="blog/my-first-crud-app.html" aria-label="Read: How I Built TaskPro">
+        <article>
+          <figure class="card-figure">
+            <img src="images/blog-taskpro.jpg" alt="TaskPro dashboard preview">
+            <figcaption class="card-caption">
+              How I Built TaskPro
+            </figcaption>
+          </figure>
+          <div class="card-body">
+            <p class="blog-excerpt">Short teaser about building TaskPro and what I learned.</p>
+          </div>
+        </article>  
+        </a>
+        <a class="blog-card card-hover" href="blog/responsive-design.html">
+          <article>
+            <figure class="card-figure">
+              <img src="images/blog-responsive-design.jpg" alt="Responsive design preview">
+              <figcaption class="card-caption">Responsive Design</figcaption>
+            </figure>
+            <div class="card-body">
+              <p class="blog-excerpt">short teaser about responsive design</p>
+            </div>
+          </article>
+        </a>
+      </div>
+    </section>
+    <section id="contact"> ... </section>
+</main>
+<footer class="site-footer section">
+  <div class="footer-inner">
+
+    <!-- Column 1: Contact -->
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <a href="mailto:wgil284@gmail.com" aria-label="Email William">wgil284@gmail.com</a>
+    </div>
+
+    <!-- Column 2: Social Links -->
+    <div class="footer-column">
+      <h3>Social</h3>
+      <a href="https://github.com/WillG1099/ice-cold-portfolio-1" target="_blank" rel="noopener noreferrer">Github</a>
+      <a href="https://www.linkedin.com/in/william-gil-dev/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://x.com/WillG_fsdev" target="_blank" rel="noopener noreferrer">Twitter</a>
+      <a href="https://bsky.app/profile/willg-fsdev.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a>
+    </div>
+
+    <!-- Column 3: Tagline -->
+    <div class="footer-column footer-tagline">
+      <p>Built with Soul by William Gil</p>
+    </div>
+
+  </div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
