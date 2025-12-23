@@ -1,3 +1,5 @@
+const cors = require("cors");
+
 const mongoose = require("mongoose");
 
 // Replace the connection string below with YOUR real string
@@ -13,6 +15,7 @@ const taskRoutes = require("./routes/taskRoutes");  // ⭐ ADD THIS
 
 
 app.use(express.static("public"));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -21,6 +24,11 @@ app.get("/", (req, res) => {
 });
 
 app.use("/tasks", taskRoutes);
-app.listen(3000, "0.0.0.0", () => {
-  console.log("Server available on http://localhost:3000");
+
+const PORT = 5000;
+
+
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
 });
+
